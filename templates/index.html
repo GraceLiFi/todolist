@@ -1,0 +1,102 @@
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>To-do list</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+
+
+
+
+<body>
+
+
+<div class="container">
+
+    <div class="section1">
+        <div>
+            <button id="toggle-dark">Switch to dark mode</button>
+        </div>
+
+        <h1 id="title">TO DO LIST</h1>
+
+        <p>
+
+            <h3 for="new-task">Add Tasks</h3>
+
+            <input id="new-task" type="text">
+
+            <button id="addButton">Add</button>
+        <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+        <input type="file" id="fileInput" accept = ".xlsx">
+        </p>
+        <div id="output" class="mt-5"></div>
+
+    </div>
+
+    <div class="section2">
+
+        <h3>To-do</h3>
+
+        <ul id="incomplete-tasks">
+
+
+
+        </ul>
+
+    </div>
+
+    <div class="section3">
+
+        <h3>Completed Tasks</h3>
+
+        <ul id="completed-tasks">
+
+            <li>
+
+                <input type="checkbox" checked="">
+
+                <label>Learn JavaScript</label>
+
+                <input type="text">
+
+                <button id="editButton" class="edit">Edit</button>
+
+                <button id="deleteButton" class="delete">Delete</button>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="section4">
+
+        <button id="clear">
+
+            <p>Clear</p>
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+
+
+
+
+
+</html>
